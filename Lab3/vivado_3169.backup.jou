@@ -1,0 +1,76 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Thu Sep 21 09:25:04 2017
+# Process ID: 3169
+# Current directory: /home/A01577421/Desktop/ECE2700/Lab3
+# Command line: vivado
+# Log file: /home/A01577421/Desktop/ECE2700/Lab3/vivado.log
+# Journal file: /home/A01577421/Desktop/ECE2700/Lab3/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/A01577421/Desktop/ECE2700/Lab3/Decoder/Decoder.xpr
+launch_simulation
+source decoder_test.tcl
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/A01577421/Desktop/ECE2700/Lab3/Decoder/Decoder.runs/impl_1/decoder3_8.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {/home/A01577421/Desktop/ECE2700/Lab3/Decoder/Decoder.runs/impl_1/decoder3_8.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_sim
+close_project
+create_project MUX /home/A01577421/Desktop/ECE2700/Lab3/MUX -part xc7a35tcpg236-1
+set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
+file mkdir /home/A01577421/Desktop/ECE2700/Lab3/MUX/MUX.srcs/sources_1/new
+close [ open /home/A01577421/Desktop/ECE2700/Lab3/MUX/MUX.srcs/sources_1/new/mux.v w ]
+add_files /home/A01577421/Desktop/ECE2700/Lab3/MUX/MUX.srcs/sources_1/new/mux.v
+import_files -fileset constrs_1 -force -norecurse /home/A01577421/Desktop/ECE2700/Lab3/Basys3_Master.xdc
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+open_project /home/A01577421/Desktop/ECE2700/Lab3/Decoder/Decoder.xpr
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run impl_1 -noclean_dir 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/A01577421/Desktop/ECE2700/Lab3/Decoder/Decoder.runs/impl_1/decoder3_8.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {/home/A01577421/Desktop/ECE2700/Lab3/Decoder/Decoder.runs/impl_1/decoder3_8.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+current_project MUX
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+file mkdir /home/A01577421/Desktop/ECE2700/Lab3/MUX/MUX.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/A01577421/Desktop/ECE2700/Lab3/MUX/MUX.srcs/sim_1/new/test_mux.v w ]
+add_files -fileset sim_1 /home/A01577421/Desktop/ECE2700/Lab3/MUX/MUX.srcs/sim_1/new/test_mux.v
+update_compile_order -fileset sim_1
+current_project Decoder
+current_project MUX
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+close_project

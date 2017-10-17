@@ -1,0 +1,14 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/A01577421/Desktop/ECE2700/Lab4/project_1/project_1.srcs/sources_1/new/dlatch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dlatch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/A01577421/Desktop/ECE2700/Lab4/project_1/project_1.srcs/sources_1/new/DFF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DFF
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/A01577421/Desktop/ECE2700/Lab4/project_1/project_1.srcs/sources_1/new/Latch_dataflow.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Latch_dataflow
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/A01577421/Desktop/ECE2700/Lab4/project_1/project_1.srcs/sources_1/new/DFF_dataflow.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DFF_dataflow
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/A01577421/Desktop/ECE2700/Lab4/project_1/project_1.srcs/sim_1/new/latchTest.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module latchTest
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/A01577421/Desktop/ECE2700/Lab4/project_1/project_1.srcs/sim_1/new/DFFTest.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DFFTest
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/A01577421/Desktop/ECE2700/Lab4/project_1/project_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

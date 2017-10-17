@@ -1,0 +1,290 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Sep 20 09:38:55 2017
+# Process ID: 15911
+# Current directory: /home/A01577421/Desktop/ECE2700/Lab2A
+# Command line: vivado
+# Log file: /home/A01577421/Desktop/ECE2700/Lab2A/vivado.log
+# Journal file: /home/A01577421/Desktop/ECE2700/Lab2A/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/software/xilinx/Vivado/2015.4/data/ip'.
+add_files -norecurse /home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.srcs/sources_1/new/SevenSegmentTruthTable.v
+WARNING: [filemgmt 56-12] File '/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.srcs/sources_1/new/SevenSegmentTruthTable.v' cannot be added to the project because it already exists in the project, skipping this file
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'SevenSegmentTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.sim/sim_1/behav'
+xvlog -m64 --relax -prj SevenSegmentTest_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.srcs/sources_1/new/SevenSegmentTruthTable.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SevenSegmentTruthTable
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.srcs/sources_1/new/SevenSegmentTop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SevenSegmentTop
+ERROR: [VRFC 10-1247] port connections cannot be mixed ordered and named [/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.srcs/sources_1/new/SevenSegmentTop.v:14]
+ERROR: [VRFC 10-1040] module SevenSegmentTop ignored due to previous errors [/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.srcs/sources_1/new/SevenSegmentTop.v:4]
+INFO: [USF-XSim-99] Step results log file:'/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.sim/sim_1/behav/xvlog.log' file for more information.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'SevenSegmentTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.sim/sim_1/behav'
+xvlog -m64 --relax -prj SevenSegmentTest_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.srcs/sources_1/new/SevenSegmentTruthTable.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SevenSegmentTruthTable
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.srcs/sources_1/new/SevenSegmentTop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SevenSegmentTop
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.srcs/sim_1/new/SevenSegmentTest.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SevenSegmentTest
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: /opt/software/xilinx/Vivado/2015.4/bin/unwrapped/lnx64.o/xelab -wto bfab0e2108b546eea6c68605ae734850 --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SevenSegmentTest_behav xil_defaultlib.SevenSegmentTest xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-426] cannot find port g on this module [/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.srcs/sources_1/new/SevenSegmentTop.v:14]
+ERROR: [VRFC 10-426] cannot find port a on this module [/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.srcs/sources_1/new/SevenSegmentTop.v:20]
+ERROR: [VRFC 10-426] cannot find port b on this module [/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.srcs/sources_1/new/SevenSegmentTop.v:21]
+ERROR: [VRFC 10-426] cannot find port c on this module [/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.srcs/sources_1/new/SevenSegmentTop.v:22]
+ERROR: [VRFC 10-426] cannot find port d on this module [/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.srcs/sources_1/new/SevenSegmentTop.v:23]
+ERROR: [VRFC 10-426] cannot find port e on this module [/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.srcs/sources_1/new/SevenSegmentTop.v:24]
+ERROR: [VRFC 10-426] cannot find port f on this module [/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.srcs/sources_1/new/SevenSegmentTop.v:25]
+ERROR: [VRFC 10-426] cannot find port g on this module [/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.srcs/sources_1/new/SevenSegmentTop.v:26]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-99] Step results log file:'/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.sim/sim_1/behav/elaborate.log' file for more information.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'SevenSegmentTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.sim/sim_1/behav'
+xvlog -m64 --relax -prj SevenSegmentTest_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.srcs/sources_1/new/SevenSegmentCombinational.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SevenSegmentCombinational
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.srcs/sources_1/new/SevenSegmentTop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SevenSegmentTop
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.srcs/sim_1/new/SevenSegmentTest.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SevenSegmentTest
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: /opt/software/xilinx/Vivado/2015.4/bin/unwrapped/lnx64.o/xelab -wto bfab0e2108b546eea6c68605ae734850 --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SevenSegmentTest_behav xil_defaultlib.SevenSegmentTest xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SevenSegmentCombinational
+Compiling module xil_defaultlib.SevenSegmentTop
+Compiling module xil_defaultlib.SevenSegmentTest
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot SevenSegmentTest_behav
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source /home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.sim/sim_1/behav/xsim.dir/SevenSegmentTest_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Sep 20 09:50:41 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SevenSegmentTest_behav -key {Behavioral:sim_1:Functional:SevenSegmentTest} -tclbatch {SevenSegmentTest.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source SevenSegmentTest.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SevenSegmentTest_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'SevenSegmentTest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.sim/sim_1/behav'
+xvlog -m64 --relax -prj SevenSegmentTest_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.srcs/sources_1/new/SevenSegmentCombinational.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SevenSegmentCombinational
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.srcs/sources_1/new/SevenSegmentTop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SevenSegmentTop
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.srcs/sim_1/new/SevenSegmentTest.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SevenSegmentTest
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.sim/sim_1/behav'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: /opt/software/xilinx/Vivado/2015.4/bin/unwrapped/lnx64.o/xelab -wto bfab0e2108b546eea6c68605ae734850 --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SevenSegmentTest_behav xil_defaultlib.SevenSegmentTest xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SevenSegmentCombinational
+Compiling module xil_defaultlib.SevenSegmentTop
+Compiling module xil_defaultlib.SevenSegmentTest
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot SevenSegmentTest_behav
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source /home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.sim/sim_1/behav/xsim.dir/SevenSegmentTest_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Sep 20 09:56:06 2017...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SevenSegmentTest_behav -key {Behavioral:sim_1:Functional:SevenSegmentTest} -tclbatch {SevenSegmentTest.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+source SevenSegmentTest.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SevenSegmentTest_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_runs impl_1 -to_step write_bitstream
+[Wed Sep 20 09:59:43 2017] Launched synth_1...
+Run output will be captured here: /home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.runs/synth_1/runme.log
+[Wed Sep 20 09:59:43 2017] Launched impl_1...
+Run output will be captured here: /home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.4
+  **** Build date : Nov 18 2015-09:53:32
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A4E09AA
+set_property PROGRAM.FILE {/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.runs/impl_1/SevenSegmentTop.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.runs/impl_1/SevenSegmentTop.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Wed Sep 20 10:17:05 2017] Launched synth_1...
+Run output will be captured here: /home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.runs/synth_1/runme.log
+[Wed Sep 20 10:17:05 2017] Launched impl_1...
+Run output will be captured here: /home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/A01577421/Desktop/ECE2700/Lab2A/.Xil/Vivado-15911-vlsi-22.engr.usu.edu/dcp/SevenSegmentTop.xdc]
+Finished Parsing XDC File [/home/A01577421/Desktop/ECE2700/Lab2A/.Xil/Vivado-15911-vlsi-22.engr.usu.edu/dcp/SevenSegmentTop.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 6263.551 ; gain = 0.000 ; free physical = 12416 ; free virtual = 27408
+Restored from archive | CPU: 0.010000 secs | Memory: 0.028748 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 6263.551 ; gain = 0.000 ; free physical = 12416 ; free virtual = 27408
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.runs/impl_1/SevenSegmentTop.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.runs/impl_1/SevenSegmentTop.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Wed Sep 20 10:19:51 2017] Launched synth_1...
+Run output will be captured here: /home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.runs/synth_1/runme.log
+[Wed Sep 20 10:19:51 2017] Launched impl_1...
+Run output will be captured here: /home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.runs/impl_1/runme.log
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {/home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.runs/impl_1/SevenSegmentTop.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A4E09AA
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 20 10:23:50 2017...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Oct 11 10:46:38 2017
+# Process ID: 8335
+# Current directory: /home/A01577421/Desktop/ECE2700/Lab3/DoubleSevenSegment/DoubleSevenSegment.runs/synth_1
+# Command line: vivado -log DoubleSevenSegment.vds -mode batch -messageDb vivado.pb -notrace -source DoubleSevenSegment.tcl
+# Log file: /home/A01577421/Desktop/ECE2700/Lab3/DoubleSevenSegment/DoubleSevenSegment.runs/synth_1/DoubleSevenSegment.vds
+# Journal file: /home/A01577421/Desktop/ECE2700/Lab3/DoubleSevenSegment/DoubleSevenSegment.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source DoubleSevenSegment.tcl -notrace

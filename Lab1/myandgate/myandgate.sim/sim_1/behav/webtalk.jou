@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Thu Sep  7 09:29:30 2017
+# Process ID: 30796
+# Current directory: /home/A01577421/Desktop/ECE2700/Lab1/myandgate/myandgate.sim/sim_1/behav
+# Command line: wbtcv -mode batch -source /home/A01577421/Desktop/ECE2700/Lab1/myandgate/myandgate.sim/sim_1/behav/xsim.dir/testbench_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/A01577421/Desktop/ECE2700/Lab1/myandgate/myandgate.sim/sim_1/behav/webtalk.log
+# Journal file: /home/A01577421/Desktop/ECE2700/Lab1/myandgate/myandgate.sim/sim_1/behav/webtalk.jou
+#-----------------------------------------------------------
+source /home/A01577421/Desktop/ECE2700/Lab1/myandgate/myandgate.sim/sim_1/behav/xsim.dir/testbench_behav/webtalk/xsim_webtalk.tcl -notrace

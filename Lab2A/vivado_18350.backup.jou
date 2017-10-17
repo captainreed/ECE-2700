@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Thu Sep 14 09:57:13 2017
+# Process ID: 18350
+# Current directory: /home/A01577421/Desktop/ECE2700/Lab2A
+# Command line: vivado
+# Log file: /home/A01577421/Desktop/ECE2700/Lab2A/vivado.log
+# Journal file: /home/A01577421/Desktop/ECE2700/Lab2A/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project SevenSegment /home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment -part xc7a35tcpg236-1
+set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
+file mkdir /home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.srcs/sources_1/new
+close [ open /home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.srcs/sources_1/new/SevenSegmentTruthTable.v w ]
+add_files /home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.srcs/sources_1/new/SevenSegmentTruthTable.v
+close [ open /home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.srcs/sources_1/new/SevenSegmentTop.v w ]
+add_files /home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.srcs/sources_1/new/SevenSegmentTop.v
+close [ open /home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.srcs/sources_1/new/SevenSegmentCombinational.v w ]
+add_files /home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.srcs/sources_1/new/SevenSegmentCombinational.v
+import_files -fileset constrs_1 -force -norecurse /home/A01577421/Desktop/ECE2700/Lab2A/Basys3_Master.xdc
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+file mkdir /home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.srcs/sim_1/new/SevenSegmentTest.v w ]
+add_files -fileset sim_1 /home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.srcs/sim_1/new/SevenSegmentTest.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source SevenSegmentTest.tcl
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+update_compile_order -fileset sources_1

@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Oct  3 11:50:36 2017
+# Process ID: 4625
+# Current directory: /home/A01577421/Desktop/ECE2700/Lab3
+# Command line: vivado
+# Log file: /home/A01577421/Desktop/ECE2700/Lab3/vivado.log
+# Journal file: /home/A01577421/Desktop/ECE2700/Lab3/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/A01577421/Desktop/ECE2700/Lab3/MUX2/MUX2.xpr
+close_project
+open_project /home/A01577421/Desktop/ECE2700/Lab3/DoubleSevenSegment/DoubleSevenSegment.xpr
+launch_simulation
+file mkdir /home/A01577421/Desktop/ECE2700/Lab3/DoubleSevenSegment/DoubleSevenSegment.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/A01577421/Desktop/ECE2700/Lab3/DoubleSevenSegment/DoubleSevenSegment.srcs/sim_1/new/decoder4_16Test.v w ]
+add_files -fileset sim_1 /home/A01577421/Desktop/ECE2700/Lab3/DoubleSevenSegment/DoubleSevenSegment.srcs/sim_1/new/decoder4_16Test.v
+update_compile_order -fileset sim_1
+open_project /home/A01577421/Desktop/ECE2700/Lab3/Decoder/Decoder.xpr
+open_project /home/A01577421/Desktop/ECE2700/Lab3/MUX/MUX.xpr
+close_project
+current_project DoubleSevenSegment
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+current_project Decoder
+launch_simulation
+source decoder_test.tcl
+current_project DoubleSevenSegment
+launch_simulation
+launch_simulation
+close_project
+close_sim

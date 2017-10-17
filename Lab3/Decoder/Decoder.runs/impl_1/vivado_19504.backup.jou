@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Thu Sep 21 08:50:26 2017
+# Process ID: 19504
+# Current directory: /home/A01577421/Desktop/ECE2700/Lab3/Decoder/Decoder.runs/impl_1
+# Command line: vivado -log decoder3_8.vdi -applog -messageDb vivado.pb -mode batch -source decoder3_8.tcl -notrace
+# Log file: /home/A01577421/Desktop/ECE2700/Lab3/Decoder/Decoder.runs/impl_1/decoder3_8.vdi
+# Journal file: /home/A01577421/Desktop/ECE2700/Lab3/Decoder/Decoder.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source decoder3_8.tcl -notrace

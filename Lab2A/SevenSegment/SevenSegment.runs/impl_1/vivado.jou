@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Sep 20 10:20:18 2017
+# Process ID: 20115
+# Current directory: /home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.runs/impl_1
+# Command line: vivado -log SevenSegmentTop.vdi -applog -messageDb vivado.pb -mode batch -source SevenSegmentTop.tcl -notrace
+# Log file: /home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.runs/impl_1/SevenSegmentTop.vdi
+# Journal file: /home/A01577421/Desktop/ECE2700/Lab2A/SevenSegment/SevenSegment.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source SevenSegmentTop.tcl -notrace
