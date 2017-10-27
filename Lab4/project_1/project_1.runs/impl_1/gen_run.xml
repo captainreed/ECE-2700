@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1508263746">
+  <File Type="BITSTR-RBT" Name="dlatch.rbt"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DCP" Name="dlatch_opt.dcp"/>
   <File Type="RDI-RDI" Name="dlatch.vdi"/>
+  <File Type="BITSTR-SYSDEF" Name="dlatch.sysdef"/>
   <File Type="BG-DRC" Name="dlatch.drc"/>
   <File Type="BG-BGN" Name="dlatch.bgn"/>
-  <File Type="BITSTR-SYSDEF" Name="dlatch.sysdef"/>
   <File Type="BITSTR-MMI" Name="dlatch.mmi"/>
   <File Type="BITSTR-BMM" Name="dlatch_bd.bmm"/>
   <File Type="BITSTR-NKY" Name="dlatch.nky"/>
-  <File Type="BITSTR-RBT" Name="dlatch.rbt"/>
   <File Type="BITSTR-MSK" Name="dlatch.msk"/>
   <File Type="BG-BIN" Name="dlatch.bin"/>
   <File Type="BG-BIT" Name="dlatch.bit"/>
@@ -47,7 +48,6 @@
   <File Type="OPT-TIMING" Name="dlatch_timing_summary_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="dlatch.hwdef"/>
   <File Type="OPT-DRC" Name="dlatch_drc_opted.rpt"/>
-  <File Type="OPT-DCP" Name="dlatch_opt.dcp"/>
   <File Type="INIT-TIMING" Name="dlatch_timing_summary_init.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="dlatch_timing_summary_postroute_physopted.pb"/>
   <File Type="PA-TCL" Name="dlatch.tcl"/>

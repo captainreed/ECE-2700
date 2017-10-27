@@ -20,6 +20,15 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module JKFF();
-    
+module JKFF(
+input d,
+output q,
+input clk
+);
+
+wire q;
+wire d;
+wire clk;
+
+DFF D1(.d(d),.q(q),.clk(clk));
 endmodule

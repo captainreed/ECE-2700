@@ -2,3 +2,6 @@ Running: xsim.dir/latchTest_behav/xsimk -simmode gui -wdb latchTest_behav.wdb -s
 Design successfully loaded
 Design Loading Memory Usage: 226076 KB (Peak: 226096 KB)
 Design Loading CPU Usage: 20 ms
+Simulation completed
+Simulation Memory Usage: 369448 KB (Peak: 434984 KB)
+Simulation CPU Usage: 20 ms
