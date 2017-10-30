@@ -26,26 +26,28 @@ input incr,
 input rst,
 output reg [7:0] Q
 
+
     );
     
+    reg [7:0] j;
     wire jinit;
     wire kinit;
     wire clkdriver;
       
     ClockDivider clkdiv(.clkin(mclk),.clkout(clkdriver));
     
-    assign jinit = incr&~rst;
+    assign j[0] = incr&~rst;
     assign kinit = incr|rst;
     
     
-    JKFF j0(.j(jinit),.k(kinit),.q(Q[0],clk(clkdriver)),
+    JKFF j0(.j(j[0]),.k(kinit),.q(Q[0]),.clk(clkdriver));
     
        genvar i;
     
     generate 
     
-    for(i = 1; i < 9; i = i+1) begin : flipping
-         JKFF j1(.j(),.k(),.q(),.clk(clkdriver));
+    for(i = 1; i < 8; i = i+1) begin : flipping
+         JKFF j1(.j(Q[i-1]&~rst&j[i-1]),.k(Q[i-1]&~rst&j[i-1]),.q(Q[i]),.clk(clkdriver));
      end
     endgenerate
     

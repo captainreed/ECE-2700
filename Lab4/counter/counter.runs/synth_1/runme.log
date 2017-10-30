@@ -1,0 +1,25 @@
+
+*** Running vivado
+    with args -log counter.vds -m64 -mode batch -messageDb vivado.pb -notrace -source counter.tcl
+
+
+****** Vivado v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source counter.tcl -notrace
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at /opt/software/xilinx/Vivado/2015.4/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at /opt/software/xilinx/Vivado/2015.4/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+Command: synth_design -top counter -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+ERROR: [Synth 8-1852] concurrent assignment to a non-net j is not permitted [/home/A01577421/Desktop/ECE2700/Lab4/counter/counter.srcs/sources_1/new/counter.v:39]
+INFO: [Synth 8-2350] module counter ignored due to previous errors [/home/A01577421/Desktop/ECE2700/Lab4/counter/counter.srcs/sources_1/new/counter.v:23]
+Failed to read verilog '/home/A01577421/Desktop/ECE2700/Lab4/counter/counter.srcs/sources_1/new/counter.v'
+INFO: [Common 17-83] Releasing license: Synthesis
+3 Infos, 2 Warnings, 0 Critical Warnings and 2 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 30 16:22:35 2017...
