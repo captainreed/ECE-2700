@@ -22,32 +22,40 @@
 
 module counter(
 input mclk,
-input incr,
+input incre,
 input rst,
-output reg [7:0] Q
+output [7:0] Q
 
 
     );
     
-    reg [7:0] j;
+    wire [7:0] j;
     wire jinit;
     wire kinit;
     wire clkdriver;
       
     ClockDivider clkdiv(.clkin(mclk),.clkout(clkdriver));
     
-    assign j[0] = incr&~rst;
-    assign kinit = incr|rst;
+//    assign j[0] = incre&~rst;
+//    assign kinit = incre|rst;
     
     
-    JKFF j0(.j(j[0]),.k(kinit),.q(Q[0]),.clk(clkdriver));
+   
     
        genvar i;
     
     generate 
     
-    for(i = 1; i < 8; i = i+1) begin : flipping
-         JKFF j1(.j(Q[i-1]&~rst&j[i-1]),.k(Q[i-1]&~rst&j[i-1]),.q(Q[i]),.clk(clkdriver));
+    for(i = 0; i < 8; i = i+1) begin : flipping
+    
+    if(i==0)begin
+    assign j[0] = incre&~rst;
+     JKFF j0(.j(j[0]),.k(kinit),.q(Q[0]),.clk(clkdriver));
+    end
+    else begin
+        assign j[i] = Q[i-1]&~rst&j[i-1];
+         JKFF j1(.j(j[i]),.k(j[i]|rst),.q(Q[i]),.clk(clkdriver));
+     end
      end
     endgenerate
     

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Oct 31 12:55:10 2017
+# Process ID: 2846
+# Current directory: /home/A01577421/Desktop/ECE2700/Lab4/counter/counter.runs/impl_1
+# Command line: vivado -log counter.vdi -applog -messageDb vivado.pb -mode batch -source counter.tcl -notrace
+# Log file: /home/A01577421/Desktop/ECE2700/Lab4/counter/counter.runs/impl_1/counter.vdi
+# Journal file: /home/A01577421/Desktop/ECE2700/Lab4/counter/counter.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source counter.tcl -notrace
