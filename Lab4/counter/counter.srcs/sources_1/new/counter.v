@@ -30,14 +30,11 @@ output [7:0] Q
     );
     
     wire [7:0] j;
-    wire jinit;
-    wire kinit;
     wire clkdriver;
       
     ClockDivider clkdiv(.clkin(mclk),.clkout(clkdriver));
     
-//    assign j[0] = incre&~rst;
-//    assign kinit = incre|rst;
+
     
     
    
@@ -50,7 +47,7 @@ output [7:0] Q
     
     if(i==0)begin
     assign j[0] = incre&~rst;
-     JKFF j0(.j(j[0]),.k(kinit),.q(Q[0]),.clk(clkdriver));
+     JKFF j0(.j(j[0]),.k(incre|rst),.q(Q[0]),.clk(clkdriver));
     end
     else begin
         assign j[i] = Q[i-1]&~rst&j[i-1];

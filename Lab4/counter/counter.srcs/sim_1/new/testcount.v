@@ -27,6 +27,7 @@ reg increment;
 reg reset;
 wire [7:0] Q;
 reg [7:0] counter;
+reg [ 3:0] count;
 
 
 initial begin
@@ -34,10 +35,10 @@ mclk =0;
 increment = 0;
 reset = 0;
 counter = 0;
-
+count= 0;
 #100
 
-forever #1 mclk = ~mclk;
+forever #10 mclk = ~mclk;
 
 end
 
@@ -45,12 +46,15 @@ counter c1(.mclk(mclk),.incre(increment),.rst(reset),.Q(Q));
 
 
 always @(posedge mclk) begin
-increment = ~increment;
-if(increment)
+count = count +1; 
 counter = counter +1;
-
-if(counter == 255) begin
+if (count == 5) begin
+increment = ~increment;
+count = 0;
+end
+if(counter == 20) begin
 reset = ~reset;
+counter = 0;
 end
 
 

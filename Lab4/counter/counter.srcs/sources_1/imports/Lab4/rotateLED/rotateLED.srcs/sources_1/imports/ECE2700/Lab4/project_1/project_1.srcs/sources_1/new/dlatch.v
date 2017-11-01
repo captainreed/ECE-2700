@@ -25,6 +25,7 @@ input d,
 output reg q,
 input clk
     );
+    
     always @(clk or d) begin
         if (clk)
             q<= d;

@@ -1,8 +1,8 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
-| Date             : Tue Oct 31 13:12:35 2017
-| Host             : vlsi-24.engr.usu.edu running 64-bit CentOS Linux release 7.1.1503 (Core)
+| Date             : Wed Nov  1 09:34:00 2017
+| Host             : vlsi-26.engr.usu.edu running 64-bit CentOS Linux release 7.1.1503 (Core)
 | Command          : report_power -file counter_power_routed.rpt -pb counter_power_summary_routed.pb
 | Design           : counter
 | Device           : xc7a35tcpg236-1
