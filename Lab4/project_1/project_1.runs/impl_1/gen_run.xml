@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1508263746">
-  <File Type="BITSTR-RBT" Name="dlatch.rbt"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BITSTR-RBT" Name="dlatch.rbt"/>
   <File Type="OPT-DCP" Name="dlatch_opt.dcp"/>
   <File Type="RDI-RDI" Name="dlatch.vdi"/>
-  <File Type="BITSTR-SYSDEF" Name="dlatch.sysdef"/>
   <File Type="BG-DRC" Name="dlatch.drc"/>
+  <File Type="BITSTR-SYSDEF" Name="dlatch.sysdef"/>
   <File Type="BG-BGN" Name="dlatch.bgn"/>
   <File Type="BITSTR-MMI" Name="dlatch.mmi"/>
   <File Type="BITSTR-BMM" Name="dlatch_bd.bmm"/>

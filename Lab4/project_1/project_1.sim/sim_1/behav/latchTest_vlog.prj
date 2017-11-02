@@ -3,8 +3,10 @@ verilog xil_defaultlib  "../../../project_1.srcs/sources_1/new/dlatch.v"
 verilog xil_defaultlib  "../../../project_1.srcs/sources_1/new/DFF.v"
 verilog xil_defaultlib  "../../../project_1.srcs/sources_1/new/Latch_dataflow.v"
 verilog xil_defaultlib  "../../../project_1.srcs/sources_1/new/DFF_dataflow.v"
+verilog xil_defaultlib  "../../../project_1.srcs/sources_1/new/JKFF.v"
 verilog xil_defaultlib  "../../../project_1.srcs/sim_1/new/latchTest.v"
 verilog xil_defaultlib  "../../../project_1.srcs/sim_1/new/DFFTest.v"
+verilog xil_defaultlib  "../../../project_1.srcs/sim_1/new/jkfftest.v"
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"
