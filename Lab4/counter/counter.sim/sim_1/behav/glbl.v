@@ -49,8 +49,13 @@ module glbl ();
     reg JTAG_USER_TDO3_GLBL = 1'bz;
     reg JTAG_USER_TDO4_GLBL = 1'bz;
 
+<<<<<<< HEAD
     assign (strong1, weak0) GSR = GSR_int;
     assign (strong1, weak0) GTS = GTS_int;
+=======
+    assign (weak1, weak0) GSR = GSR_int;
+    assign (weak1, weak0) GTS = GTS_int;
+>>>>>>> 7fa8c12894db453d7092e44d2e1fb75e0c8a5196
     assign (weak1, weak0) PRLD = PRLD_int;
 
     initial begin

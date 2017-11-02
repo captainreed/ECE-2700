@@ -25,7 +25,7 @@ input d,
 output q,
 input clk
     );
-    
+   
     wire q1;
     wire clkb = ~clk;
 //    wire qb;

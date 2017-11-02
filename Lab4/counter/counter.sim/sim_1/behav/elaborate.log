@@ -1,17 +1,33 @@
+<<<<<<< HEAD
 Vivado Simulator 2017.2
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
 Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto aee18d4de3d94b6092e002e78e4b77a6 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testCounter_behav xil_defaultlib.testCounter xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
+=======
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: /opt/software/xilinx/Vivado/2015.4/bin/unwrapped/lnx64.o/xelab -wto aee18d4de3d94b6092e002e78e4b77a6 --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testcount_behav xil_defaultlib.testcount xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+>>>>>>> 7fa8c12894db453d7092e44d2e1fb75e0c8a5196
 Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
+<<<<<<< HEAD
 Compiling module xil_defaultlib.ClockDivider
+=======
+>>>>>>> 7fa8c12894db453d7092e44d2e1fb75e0c8a5196
 Compiling module xil_defaultlib.dlatch
 Compiling module xil_defaultlib.DFF
 Compiling module xil_defaultlib.JKFF
 Compiling module xil_defaultlib.counter_default
+<<<<<<< HEAD
 Compiling module xil_defaultlib.testCounter
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot testCounter_behav
+=======
+Compiling module xil_defaultlib.testcount
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testcount_behav
+>>>>>>> 7fa8c12894db453d7092e44d2e1fb75e0c8a5196
