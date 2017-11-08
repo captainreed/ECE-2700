@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/A01577421/Desktop/ECE2700/Lab5/Lab5.srcs/sources_1/new/dbclock.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dbclock
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/A01577421/Desktop/ECE2700/Lab5/Lab5.srcs/sources_1/new/FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/A01577421/Desktop/ECE2700/Lab5/Lab5.srcs/sim_1/new/testfsm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testfsm
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/A01577421/Desktop/ECE2700/Lab5/Lab5.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
