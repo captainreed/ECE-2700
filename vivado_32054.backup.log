@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Nov  8 12:38:21 2017
+# Process ID: 32054
+# Current directory: /home/A01577421/Desktop/ECE2700
+# Command line: vivado
+# Log file: /home/A01577421/Desktop/ECE2700/vivado.log
+# Journal file: /home/A01577421/Desktop/ECE2700/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/A01577421/Desktop/ECE2700/Final_Project/Final_Project.xpr
+INFO: [Project 1-313] Project file moved from '/home/A01577421/Final_Project' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/software/xilinx/Vivado/2015.4/data/ip'.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov  8 13:23:10 2017...

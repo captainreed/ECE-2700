@@ -2,8 +2,8 @@
 # Vivado v2015.4 (64-bit)
 # SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
 # IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
-# Start of session at: Wed Nov  8 12:38:21 2017
-# Process ID: 32054
+# Start of session at: Fri Nov 10 12:30:29 2017
+# Process ID: 14842
 # Current directory: /home/A01577421/Desktop/ECE2700
 # Command line: vivado
 # Log file: /home/A01577421/Desktop/ECE2700/vivado.log
@@ -11,3 +11,13 @@
 #-----------------------------------------------------------
 start_gui
 open_project /home/A01577421/Desktop/ECE2700/Final_Project/Final_Project.xpr
+file mkdir /home/A01577421/Desktop/ECE2700/Final_Project/Final_Project.srcs/sources_1/new
+close [ open /home/A01577421/Desktop/ECE2700/Final_Project/Final_Project.srcs/sources_1/new/top.v w ]
+add_files /home/A01577421/Desktop/ECE2700/Final_Project/Final_Project.srcs/sources_1/new/top.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+close [ open /home/A01577421/Desktop/ECE2700/Final_Project/Final_Project.srcs/sources_1/new/travelRight.v w ]
+add_files /home/A01577421/Desktop/ECE2700/Final_Project/Final_Project.srcs/sources_1/new/travelRight.v
+update_compile_order -fileset sources_1
+open_project /home/A01577421/Desktop/ECE2700/Lab5/Lab5.xpr
+current_project Final_Project
