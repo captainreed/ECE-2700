@@ -23,21 +23,23 @@
 module travelRight(
 input clk,
 input direction, //if direction is true the ball will travel right
-output wire [16:0] display,
-output endzone, // true if the ball is within the last 2 pixels
-output recieving, //true if the person on the right is recieving
-output switch //indicates that the ball is at the final pixel and must either increment score or travel the other way
+output reg [16:0] display,
+output wire endzone, // true if the ball is within the last 2 pixels
+output reg recieving, //true if the person on the right is recieving
+output wire lastpixel, //indicates that the ball is at the final pixel and must either increment score or travel the other way
+output reg switch
     );
 
 wire lastpixel;
 
-initial begin
-endzone = 0;
-recieving = 1;
-switch = 0;
-assign display = 16'b0100000000000000;
 assign lastpixel = display[15]|display[0];
 assign endzone = display[15]|display[14]|display[1]|display[0];
+
+initial begin
+recieving = 1;
+switch = 0;
+display = 16'b0100000000000000;
+
 end
 
     

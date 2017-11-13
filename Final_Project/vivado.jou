@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sun Nov 12 00:55:29 2017
+# Process ID: 8944
+# Current directory: C:/Users/fearl/Desktop/School/digital_circuits/ECE-2700/Final_Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6260 C:\Users\fearl\Desktop\School\digital_circuits\ECE-2700\Final_Project\Final_Project.xpr
+# Log file: C:/Users/fearl/Desktop/School/digital_circuits/ECE-2700/Final_Project/vivado.log
+# Journal file: C:/Users/fearl/Desktop/School/digital_circuits/ECE-2700/Final_Project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/fearl/Desktop/School/digital_circuits/ECE-2700/Final_Project/Final_Project.xpr
+update_compile_order -fileset sources_1
