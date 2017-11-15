@@ -8,7 +8,7 @@ Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.ClockDivider
-Compiling module xil_defaultlib.travelRight
+Compiling module xil_defaultlib.travelControl
 Compiling module xil_defaultlib.simgame
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot simgame_behav

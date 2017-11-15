@@ -31,36 +31,49 @@ output reg switch //indicates that the ball is at the final pixel and must eithe
     );
 
 
-wire lastpixel;
+wire lastpixelright;
+wire lastpixelleft;
 
-assign lastpixel = display[15]|display[0];
-assign endzone = display[15]|display[14]|display[1]|display[0];
+
+assign lastpixelright = display[0];
+assign lastpixelleft = display[16];
+
+assign endzone = display[16]|display[15]|display[1]|display[0];
+
 
 initial begin
 recieving = 1;
 switch = 0;
-display = 16'b0100000000000000;
-
+display = 16'b1000000000000000;
 end
 
     
 always @(posedge clk) begin
 
-if(direction&~lastpixel)begin
+if(direction&~lastpixelright)begin
 assign display = display >> 1;
 switch = 0;
+recieving = 1;
 end
-if(direction&lastpixel)begin
+
+if(lastpixelright)begin
 switch = 1;
 end
-if(~direction&~lastpixel)begin
+
+if(~direction&~lastpixelleft)begin
 assign display = display << 1;
 switch = 0;
+recieving = 0;
 end
-if(~direction&lastpixel)begin
+
+if(lastpixelleft)begin
 switch = 1;
 end
-    
+
+
+
+
+
 end
     
 endmodule

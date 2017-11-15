@@ -28,23 +28,20 @@ wire endcheck;
 wire recieve;
 wire swcheck;
 
+ClockDivider clk1(.clkin(clk),.clkout(gameclock));
 
+travelControl trv(.clk(clk),.direction(direc),.display(disp),.endzone(endcheck),.recieving(recieve),.switch(swcheck));
 
 initial begin
 direc = 1;
+clk = 0;
 
-
-forever clk = ~clk;
+forever #10 clk = ~clk;
 
 end
 
 
-ClockDivider clk1(.clkin(clk),.clkout(gameclock));
-
-travelRight trv(.clk(gameclock),.direction(direc),.display(disp),.endzone(endcheck),.recieving(recieve),.switch(swcheck));
-
-
-always @(posedge gameclock)begin
+always @(posedge clk)begin
 if(swcheck)begin
 direc = ~direc;
 end
