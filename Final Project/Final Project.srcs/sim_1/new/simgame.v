@@ -23,7 +23,7 @@ module simgame();
 reg clk;
 wire gameclock;
 reg direc;
-wire [16:0] disp;
+wire [15:0] disp;
 wire endcheck;
 wire recieve;
 wire swcheck;

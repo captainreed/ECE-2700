@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 11/13/2017 12:51:04 PM
+// Create Date: 11/16/2017 12:34:15 AM
 // Design Name: 
-// Module Name: PaddleControl
+// Module Name: Gamestate
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,27 +20,16 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module PaddleControl(
-input paddle,
-input clk,
-input recieving,
-input endzone,
-input switch,
-output reg hit
-    );
-    
-    initial begin
-    hit = 0;
-    end
-    
-    always @(posedge clk)begin
-if(paddle&recieving&endzone&~switch)begin
-hit = 1;
-end
-else 
-hit = 0;
-end
+module Gamestate(
+input [15:0] displaymonitor,
+input paddle1hit,
+input paddle2hit,
+input detectendzone,
+input detectswitch,
+input detectrecieving,
+input gameclock,
+output reg [8:0]score,
+output direction
 
-    
-    
+    );
 endmodule
