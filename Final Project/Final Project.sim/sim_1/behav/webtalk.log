@@ -1,14 +1,14 @@
 #-----------------------------------------------------------
-# Webtalk v2015.4 (64-bit)
-# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
-# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
-# Start of session at: Wed Nov 15 14:18:00 2017
-# Process ID: 1542
-# Current directory: /home/A01577421/Desktop/ECE2700/Final Project/Final Project.sim/sim_1/behav
-# Command line: wbtcv -mode batch -source /home/A01577421/Desktop/ECE2700/Final Project/Final Project.sim/sim_1/behav/xsim.dir/simgame_behav/webtalk/xsim_webtalk.tcl -notrace
-# Log file: /home/A01577421/Desktop/ECE2700/Final Project/Final Project.sim/sim_1/behav/webtalk.log
-# Journal file: /home/A01577421/Desktop/ECE2700/Final Project/Final Project.sim/sim_1/behav/webtalk.jou
+# Webtalk v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Wed Nov 15 17:21:26 2017
+# Process ID: 11528
+# Current directory: C:/Users/fearl/Desktop/School/digital_circuits/ECE-2700/Final Project/Final Project.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source C:/Users/fearl/Desktop/School/digital_circuits/ECE-2700/Final Project/Final Project.sim/sim_1/behav/xsim.dir/simgame_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/fearl/Desktop/School/digital_circuits/ECE-2700/Final Project/Final Project.sim/sim_1/behav/webtalk.log
+# Journal file: C:/Users/fearl/Desktop/School/digital_circuits/ECE-2700/Final Project/Final Project.sim/sim_1/behav\webtalk.jou
 #-----------------------------------------------------------
-source /home/A01577421/Desktop/ECE2700/Final -notrace
-couldn't read file "/home/A01577421/Desktop/ECE2700/Final": no such file or directory
-INFO: [Common 17-206] Exiting Webtalk at Wed Nov 15 14:18:00 2017...
+source C:/Users/fearl/Desktop/School/digital_circuits/ECE-2700/Final -notrace
+couldn't read file "C:/Users/fearl/Desktop/School/digital_circuits/ECE-2700/Final": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Wed Nov 15 17:21:26 2017...
