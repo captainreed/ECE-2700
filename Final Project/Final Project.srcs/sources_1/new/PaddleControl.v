@@ -22,9 +22,25 @@
 
 module PaddleControl(
 input paddle,
+input clk,
 input recieving,
 input endzone,
 input switch,
-output hit
+output reg hit
     );
+    
+    initial begin
+    hit = 0;
+    end
+    
+    always @(posedge clk)begin
+if(paddle&recieving&endzone&~switch)begin
+hit = 1;
+end
+else 
+hit = 0;
+end
+
+    
+    
 endmodule
