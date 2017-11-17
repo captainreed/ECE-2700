@@ -23,7 +23,8 @@
 module travelControl(
 input clk,
 input direction, //if direction is true the ball will travel right
-output reg [15:0] display,
+input clear,
+output wire [15:0] display,
 output wire endzone, // true if the ball is within the last 2 pixels
 output reg recieving, //true if the person on the right is recieving
 //output wire lastpixel, //indicates that the ball is at the final pixel and must either increment score or travel the other way
@@ -33,69 +34,46 @@ output reg switch //indicates that the ball is at the final pixel and must eithe
 
 wire lastpixelright;
 wire lastpixelleft;
+reg [15:0] displaymonitor;
 
+assign lastpixelright = displaymonitor[0];
+assign lastpixelleft = displaymonitor[15];
+assign display = displaymonitor;
 
-assign lastpixelright = display[0];
-assign lastpixelleft = display[15];
-
-assign endzone = display[15]|display[14]|display[1]|display[0];
+assign endzone = displaymonitor[15]|displaymonitor[14]|displaymonitor[13]|displaymonitor[2]|displaymonitor[1]|displaymonitor[0];
 
 initial begin
 switch = 0;
-display = 16'b0100000000000000;
+recieving = direction;
+displaymonitor = 16'b0100000000000000;
 end
 
     
 always @(posedge clk) begin
 
 if((direction&lastpixelleft)|(direction&~lastpixelright))begin
-assign display = display >> 1;
-switch = 0;
-recieving = 1;
+displaymonitor <= displaymonitor >> 1;
+switch <= 0;
+recieving <= 1;
 end
 
 if(direction&lastpixelright)begin
-switch = 1;
+switch <= 1;
 end
 
 if((~direction&lastpixelright)|(~direction&~lastpixelleft))begin 
-assign display = display << 1;      
-switch = 0;
-recieving = 1;                           
+displaymonitor <= displaymonitor << 1;      
+switch <= 0;
+recieving <= 1;                           
 end
 
 if(~direction&lastpixelleft)begin
-switch = 1;
+switch <= 1;
 end
 
-
-//if(direction&lastpixelleft)begin
-//assign display = display >> 1;
-//end
-
-//if(direction&~lastpixelright)begin
-//assign display = display >> 1;
-//switch = 0;
-//recieving = 1;
-//end
-
-//if(lastpixelright)begin
-//switch = 1;
-//end
-
-//if(~direction&~lastpixelleft)begin
-//assign display = display << 1;
-//switch = 0;
-//recieving = 0;
-//end
-
-//if(lastpixelleft)begin
-//switch = 1;
-//end
-
-
-
-
+if(clear)begin
+displaymonitor = 0;
+end
 
 end
     

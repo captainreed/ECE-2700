@@ -34,8 +34,8 @@ module ClockDivider(
         end
         
         always @(posedge clkin) begin
-            if ( count == 25'd25_000_000) begin
-          // if(count == 25'd8) begin
+           // if ( count == 25'd25_000_000) begin
+           if(count == 25'd5) begin
                 count <=0;
                 clkout<= ~clkout;
             end

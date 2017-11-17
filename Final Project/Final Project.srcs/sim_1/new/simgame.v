@@ -20,21 +20,29 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module simgame();
+
 reg clk;
+reg clear;
 wire gameclock;
 reg direc;
 wire [15:0] disp;
 wire endcheck;
 wire recieve;
 wire swcheck;
+reg [5:0]waittime;
+
 
 ClockDivider clk1(.clkin(clk),.clkout(gameclock));
+travelControl ctrl(.clk(gameclock),.direction(direc),.clear(clear),.display(disp),.endzone(endcheck),.recieving(recieve),.switch(swcheck));
 
-travelControl trv(.clk(clk),.direction(direc),.display(disp),.endzone(endcheck),.recieving(recieve),.switch(swcheck));
+//travelControl trv(.clk(gameclock),.direction(direc),.beginning(start),.display(disp),.endzone(endcheck),.recieving(recieve),.switch(swcheck));
 
 initial begin
 direc = 1;
 clk = 0;
+clear = 0;
+waittime = 0;
+
 
 forever #10 clk = ~clk;
 
@@ -42,9 +50,17 @@ end
 
 
 always @(posedge clk)begin
+
 if(swcheck)begin
 direc = ~direc;
 end
+
+
+//waittime = waittime +1;
+
+//if(swcheck&(waittime==20))begin
+//direc = ~direc;
+//end
 
 end
 
