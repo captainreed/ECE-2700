@@ -24,7 +24,8 @@ module Gamestate(
 input paddle1,
 input paddle2,
 input reset,
-input clk
+input clk,
+output [15:0] display
 );
 
 
@@ -36,7 +37,7 @@ reg [15:0] gamedisplay;//will display the ball going back and forth
 reg [15:0] beginning;//the beginning screen
 reg [15:0] endscreen;//the end screen
 reg clear;
-reg gameclock;
+wire gameclock;
 reg direction;
 reg gameon;
 reg maxscore;
@@ -55,16 +56,15 @@ ClockDivider gameclk(.clkin(clk),.clkout(gameclock));
 PaddleControl p1(.paddle(paddle1),.clk(gameclock),.recieving(detectrecieving),.endzone(detectendzone),.switch(detectswitch),.hit(paddle1hit));
 PaddleControl p2(.paddle(paddle2),.clk(gameclock),.recieving(detectrecieving),.endzone(detectendzone),.switch(detectswitch),.hit(paddle2hit));
 
-travelControl ctrl(.clk(gameclock),.direction(),.beginning(beginning),.clear(clear),.display(gamedisplay),.endzone(detectendzone),.recieving(detectrecieving),.switch(detectswitch));
+travelControl ctrl(.clk(gameclock),.direction(direction),.clear(clear),.display(gamedisplay),.endzone(detectendzone),.recieving(detectrecieving),.switch(detectswitch));
 
 ScoreCount scoreboard(.clock(gameclock),.p1(paddle1hit),.p2(paddle2hit),.recieving(detectrecieving),.switch(detectswitch),.reset(reset),.score1(p1score),.score2(p2score));
 
 initial begin
-beginning = 16'b0100000000000000;
 endscreen = 16'b1111111111111111;
 clear = 0;
 gameclock = 0;
-direction = 0;
+direction = 1;
 display = 16'b0000000000000000;
 gameon = 0;
 maxscore = 10;

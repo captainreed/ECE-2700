@@ -2,11 +2,13 @@
 # Webtalk v2015.4 (64-bit)
 # SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
 # IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
-# Start of session at: Mon Nov 20 14:05:41 2017
-# Process ID: 4137
+# Start of session at: Mon Nov 20 13:55:00 2017
+# Process ID: 3724
 # Current directory: /home/A01577421/Desktop/Final/Final Project/Final Project.sim/sim_1/behav
-# Command line: wbtcv -mode batch -source /home/A01577421/Desktop/Final/Final Project/Final Project.sim/sim_1/behav/xsim.dir/simgame_behav/webtalk/xsim_webtalk.tcl -notrace
+# Command line: wbtcv -mode batch -source /home/A01577421/Desktop/Final/Final Project/Final Project.sim/sim_1/behav/xsim.dir/paddlesim_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: /home/A01577421/Desktop/Final/Final Project/Final Project.sim/sim_1/behav/webtalk.log
 # Journal file: /home/A01577421/Desktop/Final/Final Project/Final Project.sim/sim_1/behav/webtalk.jou
 #-----------------------------------------------------------
 source /home/A01577421/Desktop/Final/Final -notrace
+couldn't read file "/home/A01577421/Desktop/Final/Final": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Mon Nov 20 13:55:00 2017...

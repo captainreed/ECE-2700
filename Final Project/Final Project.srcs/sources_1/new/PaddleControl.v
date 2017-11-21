@@ -29,17 +29,31 @@ input switch,
 output reg hit
     );
     
+    
+reg prevpaddle;
+
+
     initial begin
     hit = 0;
+    prevpaddle = 0;
     end
     
     always @(posedge clk)begin
-if(paddle&recieving&endzone&~switch)begin
-hit = 1;
+
+
+if(paddle == ~prevpaddle)begin
+
+    if(paddle&recieving&endzone&~switch)begin
+    hit = 1;
+    end
+    else 
+    hit = 0;
+    end
+    
+prevpaddle = paddle;
 end
-else 
-hit = 0;
-end
+
+
 
     
     

@@ -26,7 +26,7 @@ input direction, //if direction is true the ball will travel right
 input clear,
 output wire [15:0] display,
 output wire endzone, // true if the ball is within the last 2 pixels
-output reg recieving, //true if the person on the right is recieving
+output wire recieving, //true if the person on the right is recieving
 //output wire lastpixel, //indicates that the ball is at the final pixel and must either increment score or travel the other way
 output reg switch //indicates that the ball is at the final pixel and must either increment score or travel the other way
     );
@@ -39,12 +39,12 @@ reg [15:0] displaymonitor;
 assign lastpixelright = displaymonitor[0];
 assign lastpixelleft = displaymonitor[15];
 assign display = displaymonitor;
+assign recieving = direction;
 
 assign endzone = displaymonitor[15]|displaymonitor[14]|displaymonitor[13]|displaymonitor[2]|displaymonitor[1]|displaymonitor[0];
 
 initial begin
 switch = 0;
-recieving = direction;
 displaymonitor = 16'b0100000000000000;
 end
 
@@ -54,7 +54,6 @@ always @(posedge clk) begin
 if((direction&lastpixelleft)|(direction&~lastpixelright))begin
 displaymonitor <= displaymonitor >> 1;
 switch <= 0;
-recieving <= 1;
 end
 
 if(direction&lastpixelright)begin
@@ -63,8 +62,7 @@ end
 
 if((~direction&lastpixelright)|(~direction&~lastpixelleft))begin 
 displaymonitor <= displaymonitor << 1;      
-switch <= 0;
-recieving <= 1;                           
+switch <= 0;                          
 end
 
 if(~direction&lastpixelleft)begin
