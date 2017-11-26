@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Wed Nov 22 16:43:06 2017
+# Process ID: 8164
+# Current directory: C:/Users/fearl/Desktop/School/digital_circuits/ECE-2700/Final Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1504 C:\Users\fearl\Desktop\School\digital_circuits\ECE-2700\Final Project\Final Project.xpr
+# Log file: C:/Users/fearl/Desktop/School/digital_circuits/ECE-2700/Final Project/vivado.log
+# Journal file: C:/Users/fearl/Desktop/School/digital_circuits/ECE-2700/Final Project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/fearl/Desktop/School/digital_circuits/ECE-2700/Final Project/Final Project.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+source paddlesim.tcl
+close_sim
+launch_simulation
+source paddlesim.tcl
+close_sim
+launch_simulation
+source paddlesim.tcl
+close_sim
+launch_simulation
+source paddlesim.tcl
+close_sim
+launch_simulation
+source paddlesim.tcl
+close_sim
+launch_simulation
+source paddlesim.tcl
+close_sim
+launch_simulation
+source paddlesim.tcl
+close_sim
