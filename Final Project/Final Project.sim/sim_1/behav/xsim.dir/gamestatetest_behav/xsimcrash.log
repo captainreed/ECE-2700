@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+Unable to capture context for thread 5692 in process 11956, can not generate back trace
+Exception at PC 0x00007FFC2741BB93
+Printing stacktrace...
+
+Exception at PC 0x00007FFC27121A52
+Attemped to write at address 0x00007FFC6897ABA4
+Another exception occurred while writing back trace, hence exiting
+=======
 Unable to capture context for thread 8864 in process 10788, can not generate back trace
 Exception at PC 0x00007FFC3685BB93
 Printing stacktrace...
@@ -5,3 +14,4 @@ Printing stacktrace...
 Exception at PC 0x00007FFC36561A52
 Attemped to write at address 0x00007FFC62F5ABA4
 Another exception occurred while writing back trace, hence exiting
+>>>>>>> 76c970f25758e2bb1b41a5ac5205bcf7e290a559

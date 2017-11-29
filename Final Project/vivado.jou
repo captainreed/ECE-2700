@@ -2,6 +2,23 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+<<<<<<< HEAD
+# Start of session at: Tue Nov 28 22:14:17 2017
+# Process ID: 8096
+# Current directory: C:/Users/fearl/Desktop/Final Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12104 C:\Users\fearl\Desktop\Final Project\Final Project.xpr
+# Log file: C:/Users/fearl/Desktop/Final Project/vivado.log
+# Journal file: C:/Users/fearl/Desktop/Final Project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/fearl/Desktop/Final Project/Final Project.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source gamestatetest.tcl
+add_wave {{/gamestatetest/game}} 
+restart
+run 10 us
+=======
 # Start of session at: Wed Nov 22 16:43:06 2017
 # Process ID: 8164
 # Current directory: C:/Users/fearl/Desktop/School/digital_circuits/ECE-2700/Final Project
@@ -33,4 +50,5 @@ source paddlesim.tcl
 close_sim
 launch_simulation
 source paddlesim.tcl
+>>>>>>> 76c970f25758e2bb1b41a5ac5205bcf7e290a559
 close_sim
